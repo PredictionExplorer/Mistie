@@ -39,14 +39,15 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-24" style={{ marginBottom: 'var(--space-5xl)' }}>
             {/* Portrait */}
             <motion.div {...fadeInUp} className="lg:col-span-2">
-              <div className="relative aspect-[3/4] bg-neutral-100">
+              <div className="relative aspect-[3/4] bg-neutral-100 overflow-hidden rounded-2xl group">
                 <Image
-                  src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=1000&fit=crop"
+                  src="/mistie.jpeg"
                   alt="Mistie - Abstract Artist"
                   fill
-                  className="object-cover grayscale"
+                  className="object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-105"
                   sizes="(max-width: 1024px) 100vw, 40vw"
                 />
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               </div>
             </motion.div>
 

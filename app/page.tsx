@@ -193,14 +193,15 @@ export default function HomePage() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.7 }}
               >
-                <div className="relative aspect-square rounded-3xl overflow-hidden card-shadow-hover">
+                <div className="relative aspect-[3/4] rounded-3xl overflow-hidden card-shadow-hover group">
                   <Image
-                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800&h=800&fit=crop"
+                    src="/mistie.jpeg"
                     alt="Mistie - Artist"
                     fill
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-105"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 </div>
               </motion.div>
 
