@@ -79,7 +79,7 @@ export default function HomePage() {
             >
               <div className="relative aspect-[4/5] rounded-3xl overflow-hidden card-shadow-hover">
                 <Image
-                  src={featuredArtworks[0]?.imageUrl || "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1200&h=1500&fit=crop"}
+                  src={featuredArtworks[0]?.imageUrl || "/artworks/artwork-1.png"}
                   alt="Featured Artwork"
                   fill
                   className="object-cover"
